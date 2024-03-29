@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/custom.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+@import url('https://fonts.maateen.me/bangla/font.css');
+
+  :root {
+    --primary-heading: 25px; /* Example primary size */
+    --primary-Detailsheading: 42px; /* Example primary size */
+    --primary-Categoryheading: 20px; /* Example primary size */
+    --primary-newsCaption: 16px; /* Example primary size */
+     --primary-newsDetailsheading:22px;
+
+    --primary-font-wight: 600; /* Example primary color */
+    --primary-color: #000000de; /* Example secondary color */
+    --primary-lineHieght: 30px; /* Example secondary color */
+    --secondary-heading: 20px; /* Example secondary color */
+    --secondary-color: #000000ad; /* Example secondary color */
+    --font-size: 16px; /* Example font size */
+    --border-right: 1px solid #e5e5e5af; /* Example border right */
+    --padding-right: 10px; /* Example border right */
+    /* Add more custom CSS variables as needed */
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bangla', Arial, sans-serif !important;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+ 
+    color: blue;
+}
+h1,h2,h3,h4,h5,h6,a,li,span,p,option{
+    font-family: 'Bangla', Arial, sans-serif !important;
+    padding: 0px;
+    margin: 0px;
+}
+span{
+   font-size: small;
+   padding: 0px 5px 0px 5px;
+}
+
+.br {
+    border-right: var(--border-right);
+    padding-right: var(--padding-right);
+}
+.bb{
+    border-bottom:var(--border-right);
+    padding-bottom:var(--padding-right);
+}
+.Cpr {
+    padding-right: var(--padding-right);
+}
+.Cpb {
+    padding-bottom: 20px;
+}
+.pr{
+    padding-right: var(--padding-right);
+}
+.cbb{
+ border-bottom: 2px solid black;
+}
+
+.catInfo h2 span {
+    color: var(--primary-color);
+    font-weight: var(--primary-font-wight);
+    font-size: var(--primary-Categoryheading);
+}
+
+.catInfo h2{
+    color: var(--primary-color);
+    font-weight: var(--primary-font-wight);
+    font-size:var(--primary-Detailsheading);
+}
+.catInfo h3 span{
+    color: var(--secondary-color);
+    font-weight: var(--primary-font-wight);
+    font-size:var(--secondary-heading);
+}
+.newsPostAndShre h2 span{
+    color: var(--secondary-color);
+    font-size: var(--font-size);
+}
+.newsDetails h3 span{
+    font-size:var( --primary-newsCaption);
+}
+.newsDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+ 
+}
+.newsDetails h2{
+    font-size: var( --primary-newsDetailsheading);
+    line-height: 1.7;
+    white-space: space;
+   
+}
+.detailsSideBar{
+    display: flex;
+    flex-direction: column;
+  
+}
+</style>
+</head>
+  <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                        <div class="catInfo bb">
+                            <h2><span>ঢালিউড</span></h2>
+                            <h2>আমার দেখা একজন গোছানো মানুষ তুমি, সিয়ামের উদ্দেশে পরী</h2>
+                            <h3><span>বিনোদন প্রতিবেদক</span></h3>
+                            <div class="newsPostAndShre d-flex justify-content-between">
+                                <div>
+                                <h2><span>প্রকাশ: ২৯ মার্চ ২০২৪, ১৮: ০৭</span></h2>
+
+                                </div>
+                                <div class="ShareButton d-flex">
+                                    <li><a href="">Facebook</a></li>
+                                    <li><a href="">Twitter</a></li>
+                                    <li><a href="">Font plus</a></li>
+                                    <li><a href="">Font Minus</a></li>
+                                    <li><a href="">Print</a></li>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="newsDetails py-5">
+                                <img src="https://images.prothomalo.com/prothomalo-bangla%2F2020-10%2F20d25940-4a6a-4671-976e-4cf69961b3e1%2F245a967314b6581b4c9f9917cf17633a_5e626fa18479c.jpg?rect=16%2C0%2C600%2C400&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0" alt="">
+                                <h3 class="bb"><span>মাথায় ইট পড়ে মারা যাওয়া বাংলাদেশ ব্যাংকের সহকারী পরিচালক দীপু সানাছবি: পরিবারের সৌজন্যে
+                                </span></h3>
+
+                                <h2 class="py-3">রাজধানীর মৌচাক এলাকায় গত ১০ জানুয়ারি ওপর থেকে ইটের টুকরা (কংক্রিটের খণ্ড) মাথায় পড়লে মৃত্যু হয় দীপু সানার। ঘটনার সাড়ে তিন মাস পেরিয়ে গেলেও এর কূলকিনারা করতে পারেনি পুলিশ। কোথা থেকে, কীভাবে ইটের টুকরা তাঁর মাথায় এসে পড়ল, সেই উৎস সম্পর্কে কিছুই জানতে পারেনি পুলিশ।
+
+                                খুলনার মেয়ে দীপু সানা (৩৩) বাংলাদেশ ব্যাংকের সদরঘাট শাখায় সহকারী পরিচালক হিসেবে কর্মরত ছিলেন। ঘটনার দিন সন্ধ্যায় কর্মস্থল থেকে অফিসের বাসে করে এসে শান্তিনগরে নামেন তিনি। সেখান থেকে হেঁটে মগবাজারের গাবতলার বাসায় ফিরছিলেন। মৌচাকে উড়ালসড়কের নিচ দিয়ে যাওয়ার সময় ওপর থেকে তাঁর মাথায় ইটের টুকরা পড়ে। এতে ঘটনাস্থলেই মারা যান তিনি। ওই ঘটনায় করা হত্যা মামলাটি এখন তদন্ত করছে ঢাকা মহানগর গোয়েন্দা পুলিশ (ডিবি)
+                                তদন্ত কর্মকর্তারা যা বলেন
+গত ১০ জানুয়ারি সন্ধ্যা ৭টা ২০ মিনিটের ক্লোজড সার্কিট টিভি ক্যামেরার (সিসিটিভি) ফুটেজে দেখা যায়, মালিবাগ-মৌচাক উড়ালসড়ক বরাবর নিচ দিয়ে হাঁটছিলেন ব্যাংক কর্মকর্তা দীপু সানা। একপর্যায়ে ওপর থেকে কংক্রিটের একটি খণ্ড মাথায় পড়লে তিনি লুটিয়ে পড়েন। এ সময় তাঁকে ঘিরে পথচারীরা ভিড় করেন। দীপুকে অচেতন অবস্থায় কয়েকজনকে একটি রিকশায় তুলতে দেখা যায়। প্রায় কাছাকাছি সময়ের আরেকটি ফুটেজে মালিবাগ-মৌচাক উড়ালসড়ক ধরে এক ব্যক্তিকে মগবাজারের দিকে দৌড়াতে দেখা যায়।
+
+মামলার তদন্তকারী ডিবি পুলিশ বলছে, সিসিটিভিতে দৌড়াতে দেখা ওই সন্দেহভাজন ব্যক্তিকে খুঁজছে পুলিশ। ধারণা করা হচ্ছে, মালিবাগ-মগবাজার উড়ালসড়ক থেকে ইটের টুকরাটি দীপু সানার মাথায় পড়েছিল।
+
+মামলার তদন্তসংশ্লিষ্ট একাধিক ডিবি কর্মকর্তা বলেন, সিসিটিভির ফুটেজ বিশ্লেষণ করে দেখা যায়, ওপর থেকে ইটের টুকরাটি দীপু সানার মাথায় পড়েছে। কিন্তু কোন স্থান থেকে সেটি পড়েছে, তা ভিডিওতে নেই। এ ছাড়া ঘটনাস্থলের পাশের ফখরুদ্দীন বিরিয়ানি রেস্টুরেন্টের কর্মীসহ আশপাশের অনেককে জিজ্ঞাসাবাদ করা হয়েছে। কিন্তু কেউ ইটের টুকরা কোত্থেকে পড়েছে, সে সম্পর্কে কিছু বলতে পারেননি।
+                            </h2>
+                            
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="detailsSideBar">
+                                <div class="detailsAdd1">
+                                    <img src="https://tpc.googlesyndication.com/simgad/18288574991889935630" alt="">
+                                </div>
+                                <div class="detailsAdd2 pt-3">
+                                    <img src="https://tpc.googlesyndication.com/simgad/18288574991889935630" alt="">
+                                </div>
+                            </div>
+                           
+                           <div class="row">
+                            <div class="col-md-12">
+                                <div class="relatedNew">
+                                    <h2>গ্যালারি কায়ায় দুই দেশের শিল্পীদের যৌথ শিল্পকর্ম প্রদর্শনী শুরু</h2>
+                                    <div class="relDesPic d-flex justify-content-between">
+                                    <h2>চট্টগ্রাম বিশ্ববিদ্যালয়ের সদ্যবিদায়ী উপাচার্য শিরীণ আখতারের পায়ে পড়েন ছাত্রলীগের এক নেতা। এই ঘটনার সিসিটিভি ভিডিও ফুটেজ সামাজিক যোগাযোগমাধ্যমে ছড়িয়ে পড়েছে।
+
+                                    </h2>
+                        
+                                    <img src="https://images.prothomalo.com/prothomalo-bangla%2F2020-10%2F20d25940-4a6a-4671-976e-4cf69961b3e1%2F245a967314b6581b4c9f9917cf17633a_5e626fa18479c.jpg?rect=16%2C0%2C600%2C400&auto=format%2Ccompress&fmt=webp&format=webp&w=640&dpr=1.0" width="100%" alt="">
+
+                                    </div>
+
+                                </div>
+                            </div>
+                           </div>
+
+
+
+                                </div>
+                            </div>
+                      
+                   
+
+                
+                
+
+            </div>
+       
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
